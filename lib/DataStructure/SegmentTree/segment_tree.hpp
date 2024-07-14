@@ -65,10 +65,11 @@ public:
     }
     // 区間全体の要素の総積を返す．O(1).
     S prod_all() const { return m_tree[1]; }
-    // jud(prod(l,-))==true となる区間の最右位値を二分探索する．
-    // ただし，要素列には単調性があり，また jud(e)==true であること．O(logN).
-    int most_right(const std::function<bool(const S &)> &jud, int l) const {
-        assert(jud(identity()) == true);
+    // f(prod(l,-))==true となる区間の最右位値を二分探索する．
+    // ただし，要素列には単調性があり，また f(e)==true であること．O(logN).
+    template <class Func = std::function<bool(const S &)>>
+    int most_right(const Func &f, int l) const {
+        assert(f(identity()) == true);
         assert(0 <= l and l <= size());
         if(l == size()) return size();
         S val = identity();
@@ -76,11 +77,11 @@ public:
         do {
             while(!(l & 1)) l >>= 1;
             S &&tmp = m_op(val, m_tree[l]);
-            if(!jud(tmp)) {
+            if(!f(tmp)) {
                 while(l < m_n) {
                     l <<= 1;
                     S &&tmp2 = m_op(val, m_tree[l]);
-                    if(jud(tmp2)) val = tmp2, l++;
+                    if(f(tmp2)) val = tmp2, l++;
                 }
                 return l - m_n;
             }
@@ -88,10 +89,11 @@ public:
         } while((l & -l) != l);  // (x&-x)==x のとき，xは2の階乗数．
         return size();
     }
-    // jud(prod(-,r))==true となる区間の最左位値を二分探索する．
-    // ただし，要素列には単調性があり，また jud(e)==true であること．O(logN).
-    int most_left(const std::function<bool(const S &)> &jud, int r) const {
-        assert(jud(identity()) == true);
+    // f(prod(-,r))==true となる区間の最左位値を二分探索する．
+    // ただし，要素列には単調性があり，また f(e)==true であること．O(logN).
+    template <class Func = std::function<bool(const S &)>>
+    int most_left(const Func &f, int r) const {
+        assert(f(identity()) == true);
         assert(0 <= r and r <= size());
         if(r == 0) return 0;
         S val = identity();
@@ -100,11 +102,11 @@ public:
             r--;
             while(r > 1 and r & 1) r >>= 1;
             S &&tmp = m_op(m_tree[r], val);
-            if(!jud(tmp)) {
+            if(!f(tmp)) {
                 while(r < m_n) {
                     r = (r << 1) | 1;
                     S &&tmp2 = m_op(m_tree[r], val);
-                    if(jud(tmp2)) val = tmp2, r--;
+                    if(f(tmp2)) val = tmp2, r--;
                 }
                 return r - m_n + 1;
             }
@@ -116,12 +118,14 @@ public:
 
     friend std::ostream &operator<<(std::ostream &os, const SegmentTree &segtree) {
         int l = 1, r = 2;
+        os << "[\n";
         while(l < 2 * segtree.m_n) {
-            os << (l == 1 ? "[" : " ");
-            for(int i = l; i < r; ++i) os << (i == l ? "[" : " ") << segtree.m_tree[i];
-            os << "]" << (r == 2 * segtree.m_n ? "]" : "\n");
+            os << "  [";
+            for(int i = l; i < r; ++i) os << (i == l ? "" : " ") << segtree.m_tree[i];
+            os << "]\n";
             l <<= 1, r <<= 1;
         }
+        os << "]";
         return os;
     }
 };
