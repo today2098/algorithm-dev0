@@ -6,6 +6,7 @@
 
 #include "../lib/Math/ModularArithmetic/modint.hpp"
 #include "../lib/Utils/debug.hpp"
+#include "../lib/Utils/table.hpp"
 
 int main() {
     std::string s, t;
@@ -18,11 +19,11 @@ int main() {
     const int n = s.size();
     // dp[i+1][0]:=(i文字まで見て，SがTより大きい場合の通り数).
     // dp[i+1][1]:=(i文字まで見て，SとTが等しい場合の通り数).
-    std::vector dp(n + 1, std::vector<algorithm::mint1000000007>(2, 0));
+    auto &&dp = algorithm::table(n + 1, 2, algorithm::mint1000000007(0));
     dp[0][1] = 1;
     // dp2[i+1][0]:=(i文字まで見て，SがTより大きい場合のTの総和).
     // dp2[i+1][1]:=(i文字まで見て，SとTが等しい場合のTの総和).
-    std::vector dp2(n + 1, std::vector<algorithm::mint1000000007>(2, 0));
+    auto &&dp2 = algorithm::table(n + 1, 2, algorithm::mint1000000007(0));
     for(int i = 0; i < n; ++i) {
         int a = s[i] - '0';
         if(t[i] == '?') {
