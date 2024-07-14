@@ -26,9 +26,9 @@ int main() {
     for(int i = 0; i < n; ++i) {
         int a = s[i] - '0';
         if(t[i] == '?') {
-            dp[i + 1][0] += dp[i][0] * 10 + dp[i][1] * a;
+            dp[i + 1][0] += dp[i][0] * 10;
             dp2[i + 1][0] += dp2[i][0] * 10 * 10 + acc[9] * dp[i][0];
-            if(a >= 1) {
+            if(a > 0) {
                 dp[i + 1][0] += dp[i][1] * a;
                 dp2[i + 1][0] += dp2[i][1] * 10 * a + acc[a - 1] * dp[i][1];
             }
