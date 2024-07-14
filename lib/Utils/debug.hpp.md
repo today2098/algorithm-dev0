@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/aoj-3110-modint.test.cpp
+    title: test/aoj-3110-modint.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     _deprecated_at_docs: docs/Utils/debug.md
     document_title: "\u30C7\u30D0\u30C3\u30B0\u7528\u95A2\u6570\u5F62\u5F0F\u30DE\u30AF\
@@ -120,9 +123,10 @@ data:
   isVerificationFile: false
   path: lib/Utils/debug.hpp
   requiredBy: []
-  timestamp: '2024-07-14 14:40:40+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-07-14 23:58:11+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/aoj-3110-modint.test.cpp
 documentation_of: lib/Utils/debug.hpp
 layout: document
 redirect_from:

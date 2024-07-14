@@ -69,7 +69,7 @@ data:
   isVerificationFile: false
   path: lib/DataStructure/SegmentTree/sparse_table.hpp
   requiredBy: []
-  timestamp: '2024-07-14 14:40:40+09:00'
+  timestamp: '2024-07-14 23:58:11+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo-staticrmp-sparse_table.test.cpp

@@ -65,7 +65,7 @@ data:
   isVerificationFile: true
   path: test/aoj-DSL_1_A-union_find.test.cpp
   requiredBy: []
-  timestamp: '2024-07-14 14:40:40+09:00'
+  timestamp: '2024-07-14 23:58:11+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/aoj-DSL_1_A-union_find.test.cpp

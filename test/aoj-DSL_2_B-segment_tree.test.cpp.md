@@ -104,7 +104,7 @@ data:
   isVerificationFile: true
   path: test/aoj-DSL_2_B-segment_tree.test.cpp
   requiredBy: []
-  timestamp: '2024-07-14 14:40:40+09:00'
+  timestamp: '2024-07-14 23:58:11+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/aoj-DSL_2_B-segment_tree.test.cpp
