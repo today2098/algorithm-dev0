@@ -78,7 +78,7 @@ data:
   isVerificationFile: true
   path: test/aoj-GRL_1_A-dijkstra.test.cpp
   requiredBy: []
-  timestamp: '2024-07-14 12:08:27+09:00'
+  timestamp: '2024-07-14 12:29:35+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/aoj-GRL_1_A-dijkstra.test.cpp
