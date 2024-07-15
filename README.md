@@ -140,7 +140,7 @@ My library for competitive programming.
 <a id="ModularArithmetic"></a>
 #### Modular Arithmetic
 
-- Modint構造体
+- [Modint構造体](https://today2098.github.io/algorithm-dev/lib/Math/ModularArithmetic/modint.hpp)
 - 動的Modint
 
 
@@ -185,3 +185,4 @@ My library for competitive programming.
 
 - [My Template](https://today2098.github.io/algorithm-dev/lib/Utils/template.hpp)
 - [デバッグ用関数形式マクロ](https://today2098.github.io/algorithm-dev/lib/Utils/debug.hpp)
+- [多次元配列生成](https://today2098.github.io/algorithm-dev/lib/Utils/table.hpp)
