@@ -109,7 +109,7 @@ My library for competitive programming.
 #### Number Theory
 
 - 素数判定
-- Sieve of Eratosthenes（エラトステネスの篩）
+- [Sieve of Eratosthenes（エラトステネスの篩）](https://today2098.github.io/algorithm-dev/lib/Math/NumberTheory/sieve.hpp)
 - 線形篩
 - 区間篩
 - Greatest Common Divisor（最大公約数）
