@@ -3,7 +3,7 @@
 
 /**
  * @brief 線形篩
- * @docs docs/Math/NumberTheory/liner_sieve.md
+ * @docs docs/Math/NumberTheory/linear_sieve.md
  */
 
 #include <algorithm>
