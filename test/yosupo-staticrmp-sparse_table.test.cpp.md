@@ -59,7 +59,7 @@ data:
   isVerificationFile: true
   path: test/yosupo-staticrmp-sparse_table.test.cpp
   requiredBy: []
-  timestamp: '2024-07-14 23:58:11+09:00'
+  timestamp: '2024-07-20 13:42:52+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo-staticrmp-sparse_table.test.cpp

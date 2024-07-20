@@ -19,7 +19,7 @@ data:
     \ <iostream>\n#include <vector>\n\n#line 1 \"lib/DataStructure/SegmentTree/segment_tree.hpp\"\
     \n\n\n\n/**\n * @brief Segment Tree\n * @docs docs/DataStructure/SegmentTree/segment_tree.md\n\
     \ */\n\n#line 10 \"lib/DataStructure/SegmentTree/segment_tree.hpp\"\n#include\
-    \ <cassert>\n#include <functional>\n#line 13 \"lib/DataStructure/SegmentTree/segment_tree.hpp\"\
+    \ <cassert>\n#include <functional>\n#line 14 \"lib/DataStructure/SegmentTree/segment_tree.hpp\"\
     \n\nnamespace algorithm {\n\ntemplate <typename S>\nclass SegmentTree {\n    using\
     \ Op = std::function<S(const S &, const S &)>;\n\n    Op m_op;               \
     \ // S m_op(S,S):=(\u4E8C\u9805\u6F14\u7B97\u95A2\u6570).\n    S m_e;        \
@@ -104,7 +104,7 @@ data:
   isVerificationFile: true
   path: test/yosupo-staticrmq-segment_tree.test.cpp
   requiredBy: []
-  timestamp: '2024-07-14 23:58:11+09:00'
+  timestamp: '2024-07-20 13:42:52+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo-staticrmq-segment_tree.test.cpp

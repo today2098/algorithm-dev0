@@ -69,7 +69,7 @@ data:
   isVerificationFile: false
   path: lib/DataStructure/SegmentTree/sparse_table.hpp
   requiredBy: []
-  timestamp: '2024-07-14 23:58:11+09:00'
+  timestamp: '2024-07-20 13:42:52+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo-staticrmp-sparse_table.test.cpp
@@ -92,5 +92,5 @@ title: Sparse Table
 
 ## 参考文献
 
-- tookunn. "Sparse Tableを知ったので、忘れないように。". Hatena Blog. <https://tookunn.hatenablog.com/entry/2016/07/13/211148>.
-- "Sparse Table". いかたこのたこつぼ. <https://ikatakos.com/pot/programming_algorithm/data_structure/sparse_table>.
+1. tookunn. "Sparse Tableを知ったので、忘れないように。". Hatena Blog. <https://tookunn.hatenablog.com/entry/2016/07/13/211148>.
+1. "Sparse Table". いかたこのたこつぼ. <https://ikatakos.com/pot/programming_algorithm/data_structure/sparse_table>.
