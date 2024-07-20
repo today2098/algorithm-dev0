@@ -1,6 +1,11 @@
 #ifndef ALGORITHM_TEMPLATE_HPP
 #define ALGORITHM_TEMPLATE_HPP 1
 
+/**
+ * @brief My Template
+ * @docs docs/Utils/template.md
+ */
+
 #include <bits/stdc++.h>
 #define REP(i, n) for(int i = 0; i < (int)(n); ++i)
 #define FOR(i, l, r) for(int i = (int)(l); i < (int)(r); ++i)
