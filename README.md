@@ -127,8 +127,8 @@ My library for competitive programming.
 - Least Common Multiple（最小公倍数）
 - 拡張ユークリッドの互除法
 - [素数判定](https://today2098.github.io/algorithm-dev/src/Math/NumberTheory/is_prime.hpp)
-- 素因数分解
-- 約数列挙
+- [素因数分解](https://today2098.github.io/algorithm-dev/src/Math/NumberTheory/prime_factorize.hpp)
+- [約数列挙](https://today2098.github.io/algorithm-dev/src/Math/NumberTheory/divisors.hpp)
 - [Sieve of Eratosthenes（エラトステネスの篩）](https://today2098.github.io/algorithm-dev/lib/Math/NumberTheory/sieve.hpp)
 - [線形篩](https://today2098.github.io/algorithm-dev/lib/Math/NumberTheory/liner_sieve.hpp)
 - [区間篩](https://today2098.github.io/algorithm-dev/lib/Math/NumberTheory/segment_sieve.hpp)
