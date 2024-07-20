@@ -18,6 +18,8 @@ My library for competitive programming.
     - [Flow](#Flow)
     - [Tree](#Tree)
     - [Others](#GraphOthers)
+- [DP](#DP)
+- [String](#String)
 - [Math](#Math)
     - [Number Theory](#NumberTheory)
     - [Algebra](#Algebra)
@@ -26,8 +28,6 @@ My library for competitive programming.
     - [Convolution](#Convolution)
     - [Others](#MathOthers)
 - [Geometry](#Geometry)
-- [DP](#DP)
-- [String](#String)
 - [Others](#Others)
 - [Utils](#Utils)
 
@@ -102,21 +102,36 @@ My library for competitive programming.
 - Topological Sort（トポロジカルソート）
 
 
+<a id="DP"></a>
+### DP
+
+- Longest Common Subsequence（最長共通部分列）
+- Longest Increasing Subsequence（最長増加部分列）
+- Edit Distance（編集距離）
+
+
+<a id="String"></a>
+### String
+
+- Z Algorithm（最長共通接頭辞）
+- Manacher's Algorithm（最長回文）
+
+
 <a id="Math"></a>
 ### Math
 
 <a id="NumberTheory"></a>
 #### Number Theory
 
-- 素数判定
+- [素数判定](https://today2098.github.io/algorithm-dev/src/Math/NumberTheory/is_prime.hpp)
+- [素因数分解](https://today2098.github.io/algorithm-dev/src/Math/NumberTheory/prime_factorize.hpp)
+- [約数列挙](https://today2098.github.io/algorithm-dev/src/Math/NumberTheory/divisors.hpp)
 - [Sieve of Eratosthenes（エラトステネスの篩）](https://today2098.github.io/algorithm-dev/lib/Math/NumberTheory/sieve.hpp)
-- 線形篩
-- 区間篩
-- Greatest Common Divisor（最大公約数）
-- Least Common Multiple（最小公倍数）
+- [線形篩](https://today2098.github.io/algorithm-dev/lib/Math/NumberTheory/liner_sieve.hpp)
+- [区間篩](https://today2098.github.io/algorithm-dev/lib/Math/NumberTheory/segment_sieve.hpp)
+- [Greatest Common Divisor（最大公約数）](https://today2098.github.io/algorithm-dev/lib/Math/NumberTheory/greatest_common_divisor.hpp)
+- [Least Common Multiple（最小公倍数）](https://today2098.github.io/algorithm-dev/lib/Math/NumberTheory/least_common_multiple.hpp)
 - 拡張ユークリッドの互除法
-- 素因数分解
-- 約数列挙
 - Chinese Remainder Theorem（中国剰余定理）
 - Garner's Algorithm（中国剰余定理）
 - Floor Sum
@@ -156,21 +171,6 @@ My library for competitive programming.
 #### Others
 
 - 多倍長整数
-
-
-<a id="DP"></a>
-### DP
-
-- Longest Common Subsequence（最長共通部分列）
-- Longest Increasing Subsequence（最長増加部分列）
-- Edit Distance（編集距離）
-
-
-<a id="String"></a>
-### String
-
-- Z Algorithm（最長共通接頭辞）
-- Manacher's Algorithm（最長回文）
 
 
 <a id="Others"></a>
