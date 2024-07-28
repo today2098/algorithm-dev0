@@ -776,6 +776,21 @@
 		],
 		"description": "約数列挙"
 	},
+	"ipow": {
+		"scope": "cpp",
+		"prefix": "ipow",
+		"body": [
+			"// 繰り返し二乗法．O(logK).",
+			"long long ipow(long long n, long long k) {",
+			"    assert(k >= 0);",
+			"    if(k == 0) return 1;",
+			"    long long &&res = ipow(n * n, k >> 1);",
+			"    if(k & 1LL) res *= n;",
+			"    return res;",
+			"}"
+		],
+		"description": "繰り返し二乗法"
+	},
 	"is_prime": {
 		"scope": "cpp",
 		"prefix": "is_prime",

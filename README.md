@@ -170,6 +170,7 @@ My library for competitive programming.
 <a id="MathOthers"></a>
 #### Others
 
+- [繰り返し二乗法（べき乗）](https://today2098.github.io/algorithm-dev/lib/Math/power.hpp)
 - 多倍長整数
 
 
@@ -185,4 +186,5 @@ My library for competitive programming.
 
 - [My Template](https://today2098.github.io/algorithm-dev/lib/Utils/template.hpp)
 - [デバッグ用関数形式マクロ](https://today2098.github.io/algorithm-dev/lib/Utils/debug.hpp)
+- [処理時間計測クラス](https://today2098.github.io/algorithm-dev/lib/Utils/timer.hpp)
 - [多次元配列生成](https://today2098.github.io/algorithm-dev/lib/Utils/table.hpp)
