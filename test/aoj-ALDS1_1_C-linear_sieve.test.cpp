@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include "../lib/Math/NumberTheory/liner_sieve.hpp"
+#include "../lib/Math/NumberTheory/linear_sieve.hpp"
 
 int main() {
     int n;

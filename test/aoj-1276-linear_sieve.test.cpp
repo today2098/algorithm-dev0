@@ -4,7 +4,7 @@
 #include <iostream>
 #include <iterator>
 
-#include "../lib/Math/NumberTheory/liner_sieve.hpp"
+#include "../lib/Math/NumberTheory/linear_sieve.hpp"
 
 int main() {
     constexpr int mx = 1299709;
