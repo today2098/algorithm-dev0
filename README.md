@@ -171,6 +171,7 @@ My library for competitive programming.
 #### Others
 
 - [繰り返し二乗法（べき乗）](https://today2098.github.io/algorithm-dev/lib/Math/power.hpp)
+- [ニュートン法（平方根）](https://today2098.github.io/algorithm-dev/lib/Math/square_root.hpp)
 - 多倍長整数
 
 
