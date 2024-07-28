@@ -2,7 +2,7 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: lib/Math/NumberTheory/liner_sieve.hpp
+    path: lib/Math/NumberTheory/linear_sieve.hpp
     title: "\u7DDA\u5F62\u7BE9"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
@@ -14,11 +14,11 @@ data:
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/challenges/sources/ICPC/Regional/1276
     links:
     - https://onlinejudge.u-aizu.ac.jp/challenges/sources/ICPC/Regional/1276
-  bundledCode: "#line 1 \"test/aoj-1276-liner_sieve.test.cpp\"\n#define PROBLEM \"\
+  bundledCode: "#line 1 \"test/aoj-1276-linear_sieve.test.cpp\"\n#define PROBLEM \"\
     https://onlinejudge.u-aizu.ac.jp/challenges/sources/ICPC/Regional/1276\"\n\n#include\
-    \ <algorithm>\n#include <iostream>\n#include <iterator>\n\n#line 1 \"lib/Math/NumberTheory/liner_sieve.hpp\"\
-    \n\n\n\n/**\n * @brief \u7DDA\u5F62\u7BE9\n * @docs docs/Math/NumberTheory/liner_sieve.md\n\
-    \ */\n\n#line 10 \"lib/Math/NumberTheory/liner_sieve.hpp\"\n#include <cassert>\n\
+    \ <algorithm>\n#include <iostream>\n#include <iterator>\n\n#line 1 \"lib/Math/NumberTheory/linear_sieve.hpp\"\
+    \n\n\n\n/**\n * @brief \u7DDA\u5F62\u7BE9\n * @docs docs/Math/NumberTheory/linear_sieve.md\n\
+    \ */\n\n#line 10 \"lib/Math/NumberTheory/linear_sieve.hpp\"\n#include <cassert>\n\
     #include <map>\n#include <vector>\n\nnamespace algorithm {\n\n// \u7DDA\u5F62\u7BE9\
     \uFF0E\nclass LinearSieve {\n    int m_mx;  // m_mx:=(\u7BE9\u306B\u304B\u3051\
     \u308B\u6700\u5927\u306E\u81EA\u7136\u6570).\n    // m_lpf[n]:=(\u81EA\u7136\u6570\
@@ -51,7 +51,7 @@ data:
     \   std::sort(res.begin(), res.end());\n        return res;\n    }\n    // \u7D20\
     \u6570\u306E\u30EA\u30B9\u30C8\u3092\u53C2\u7167\u3059\u308B\uFF0EO(1).\n    const\
     \ std::vector<int> &primes() const { return m_primes; }\n};\n\n}  // namespace\
-    \ algorithm\n\n\n#line 8 \"test/aoj-1276-liner_sieve.test.cpp\"\n\nint main()\
+    \ algorithm\n\n\n#line 8 \"test/aoj-1276-linear_sieve.test.cpp\"\n\nint main()\
     \ {\n    constexpr int mx = 1299709;\n    algorithm::LinearSieve sieve(mx);\n\n\
     \    const auto &primes = sieve.primes();\n    while(true) {\n        int a;\n\
     \        std::cin >> a;\n        if(a == 0) break;\n\n        auto itr = std::lower_bound(primes.cbegin(),\
@@ -59,24 +59,24 @@ data:
     \   else std::cout << *itr - *std::prev(itr) << \"\\n\";\n    }\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/challenges/sources/ICPC/Regional/1276\"\
     \n\n#include <algorithm>\n#include <iostream>\n#include <iterator>\n\n#include\
-    \ \"../lib/Math/NumberTheory/liner_sieve.hpp\"\n\nint main() {\n    constexpr\
+    \ \"../lib/Math/NumberTheory/linear_sieve.hpp\"\n\nint main() {\n    constexpr\
     \ int mx = 1299709;\n    algorithm::LinearSieve sieve(mx);\n\n    const auto &primes\
     \ = sieve.primes();\n    while(true) {\n        int a;\n        std::cin >> a;\n\
     \        if(a == 0) break;\n\n        auto itr = std::lower_bound(primes.cbegin(),\
     \ primes.cend(), a);\n        if(*itr == a) std::cout << 0 << \"\\n\";\n     \
     \   else std::cout << *itr - *std::prev(itr) << \"\\n\";\n    }\n}\n"
   dependsOn:
-  - lib/Math/NumberTheory/liner_sieve.hpp
+  - lib/Math/NumberTheory/linear_sieve.hpp
   isVerificationFile: true
-  path: test/aoj-1276-liner_sieve.test.cpp
+  path: test/aoj-1276-linear_sieve.test.cpp
   requiredBy: []
-  timestamp: '2024-07-20 13:42:52+09:00'
+  timestamp: '2024-07-28 23:50:32+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/aoj-1276-liner_sieve.test.cpp
+documentation_of: test/aoj-1276-linear_sieve.test.cpp
 layout: document
 redirect_from:
-- /verify/test/aoj-1276-liner_sieve.test.cpp
-- /verify/test/aoj-1276-liner_sieve.test.cpp.html
-title: test/aoj-1276-liner_sieve.test.cpp
+- /verify/test/aoj-1276-linear_sieve.test.cpp
+- /verify/test/aoj-1276-linear_sieve.test.cpp.html
+title: test/aoj-1276-linear_sieve.test.cpp
 ---

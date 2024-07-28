@@ -2,7 +2,7 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: lib/Math/NumberTheory/liner_sieve.hpp
+    path: lib/Math/NumberTheory/linear_sieve.hpp
     title: "\u7DDA\u5F62\u7BE9"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
@@ -14,10 +14,10 @@ data:
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/1/ALDS1_1_C
     links:
     - https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/1/ALDS1_1_C
-  bundledCode: "#line 1 \"test/aoj-ALDS1_1_C-liner_sieve.test.cpp\"\n#define PROBLEM\
+  bundledCode: "#line 1 \"test/aoj-ALDS1_1_C-linear_sieve.test.cpp\"\n#define PROBLEM\
     \ \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/1/ALDS1_1_C\"\n\n\
-    #include <iostream>\n\n#line 1 \"lib/Math/NumberTheory/liner_sieve.hpp\"\n\n\n\
-    \n/**\n * @brief \u7DDA\u5F62\u7BE9\n * @docs docs/Math/NumberTheory/liner_sieve.md\n\
+    #include <iostream>\n\n#line 1 \"lib/Math/NumberTheory/linear_sieve.hpp\"\n\n\n\
+    \n/**\n * @brief \u7DDA\u5F62\u7BE9\n * @docs docs/Math/NumberTheory/linear_sieve.md\n\
     \ */\n\n#include <algorithm>\n#include <cassert>\n#include <map>\n#include <vector>\n\
     \nnamespace algorithm {\n\n// \u7DDA\u5F62\u7BE9\uFF0E\nclass LinearSieve {\n\
     \    int m_mx;  // m_mx:=(\u7BE9\u306B\u304B\u3051\u308B\u6700\u5927\u306E\u81EA\
@@ -50,29 +50,29 @@ data:
     \            }\n        }\n        std::sort(res.begin(), res.end());\n      \
     \  return res;\n    }\n    // \u7D20\u6570\u306E\u30EA\u30B9\u30C8\u3092\u53C2\
     \u7167\u3059\u308B\uFF0EO(1).\n    const std::vector<int> &primes() const { return\
-    \ m_primes; }\n};\n\n}  // namespace algorithm\n\n\n#line 6 \"test/aoj-ALDS1_1_C-liner_sieve.test.cpp\"\
+    \ m_primes; }\n};\n\n}  // namespace algorithm\n\n\n#line 6 \"test/aoj-ALDS1_1_C-linear_sieve.test.cpp\"\
     \n\nint main() {\n    int n;\n    std::cin >> n;\n\n    constexpr int mx = 1e8;\n\
     \    algorithm::LinearSieve sieve(mx);\n\n    int ans = 0;\n    for(int i = 0;\
     \ i < n; ++i) {\n        int a;\n        std::cin >> a;\n\n        if(sieve.is_prime(a))\
     \ ans++;\n    }\n\n    std::cout << ans << std::endl;\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/1/ALDS1_1_C\"\
-    \n\n#include <iostream>\n\n#include \"../lib/Math/NumberTheory/liner_sieve.hpp\"\
+    \n\n#include <iostream>\n\n#include \"../lib/Math/NumberTheory/linear_sieve.hpp\"\
     \n\nint main() {\n    int n;\n    std::cin >> n;\n\n    constexpr int mx = 1e8;\n\
     \    algorithm::LinearSieve sieve(mx);\n\n    int ans = 0;\n    for(int i = 0;\
     \ i < n; ++i) {\n        int a;\n        std::cin >> a;\n\n        if(sieve.is_prime(a))\
     \ ans++;\n    }\n\n    std::cout << ans << std::endl;\n}\n"
   dependsOn:
-  - lib/Math/NumberTheory/liner_sieve.hpp
+  - lib/Math/NumberTheory/linear_sieve.hpp
   isVerificationFile: true
-  path: test/aoj-ALDS1_1_C-liner_sieve.test.cpp
+  path: test/aoj-ALDS1_1_C-linear_sieve.test.cpp
   requiredBy: []
-  timestamp: '2024-07-20 13:42:52+09:00'
+  timestamp: '2024-07-28 23:50:32+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/aoj-ALDS1_1_C-liner_sieve.test.cpp
+documentation_of: test/aoj-ALDS1_1_C-linear_sieve.test.cpp
 layout: document
 redirect_from:
-- /verify/test/aoj-ALDS1_1_C-liner_sieve.test.cpp
-- /verify/test/aoj-ALDS1_1_C-liner_sieve.test.cpp.html
-title: test/aoj-ALDS1_1_C-liner_sieve.test.cpp
+- /verify/test/aoj-ALDS1_1_C-linear_sieve.test.cpp
+- /verify/test/aoj-ALDS1_1_C-linear_sieve.test.cpp.html
+title: test/aoj-ALDS1_1_C-linear_sieve.test.cpp
 ---

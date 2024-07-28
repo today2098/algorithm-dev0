@@ -40,7 +40,7 @@ data:
   isVerificationFile: false
   path: lib/Utils/template.hpp
   requiredBy: []
-  timestamp: '2024-07-20 13:42:52+09:00'
+  timestamp: '2024-07-28 23:50:32+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: lib/Utils/template.hpp

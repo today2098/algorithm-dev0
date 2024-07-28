@@ -4,23 +4,23 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: test/aoj-1276-liner_sieve.test.cpp
-    title: test/aoj-1276-liner_sieve.test.cpp
+    path: test/aoj-1276-linear_sieve.test.cpp
+    title: test/aoj-1276-linear_sieve.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/aoj-ALDS1_1_C-liner_sieve.test.cpp
-    title: test/aoj-ALDS1_1_C-liner_sieve.test.cpp
+    path: test/aoj-ALDS1_1_C-linear_sieve.test.cpp
+    title: test/aoj-ALDS1_1_C-linear_sieve.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
-    _deprecated_at_docs: docs/Math/NumberTheory/liner_sieve.md
+    _deprecated_at_docs: docs/Math/NumberTheory/linear_sieve.md
     document_title: "\u7DDA\u5F62\u7BE9"
     links: []
-  bundledCode: "#line 1 \"lib/Math/NumberTheory/liner_sieve.hpp\"\n\n\n\n/**\n * @brief\
-    \ \u7DDA\u5F62\u7BE9\n * @docs docs/Math/NumberTheory/liner_sieve.md\n */\n\n\
-    #include <algorithm>\n#include <cassert>\n#include <map>\n#include <vector>\n\n\
-    namespace algorithm {\n\n// \u7DDA\u5F62\u7BE9\uFF0E\nclass LinearSieve {\n  \
-    \  int m_mx;  // m_mx:=(\u7BE9\u306B\u304B\u3051\u308B\u6700\u5927\u306E\u81EA\
+  bundledCode: "#line 1 \"lib/Math/NumberTheory/linear_sieve.hpp\"\n\n\n\n/**\n *\
+    \ @brief \u7DDA\u5F62\u7BE9\n * @docs docs/Math/NumberTheory/linear_sieve.md\n\
+    \ */\n\n#include <algorithm>\n#include <cassert>\n#include <map>\n#include <vector>\n\
+    \nnamespace algorithm {\n\n// \u7DDA\u5F62\u7BE9\uFF0E\nclass LinearSieve {\n\
+    \    int m_mx;  // m_mx:=(\u7BE9\u306B\u304B\u3051\u308B\u6700\u5927\u306E\u81EA\
     \u7136\u6570).\n    // m_lpf[n]:=(\u81EA\u7136\u6570n\u306E\u6700\u5C0F\u306E\u7D20\
     \u56E0\u6570). Least prime factor. m_lpf[n]==n \u306E\u3068\u304D\uFF0Cn\u306F\
     \u7D20\u6570\uFF0E\n    std::vector<int> m_lpf;\n    std::vector<int> m_primes;\
@@ -52,7 +52,7 @@ data:
     \u7167\u3059\u308B\uFF0EO(1).\n    const std::vector<int> &primes() const { return\
     \ m_primes; }\n};\n\n}  // namespace algorithm\n\n\n"
   code: "#ifndef ALGORITHM_LINEAR_SIEVE_HPP\n#define ALGORITHM_LINEAR_SIEVE_HPP 1\n\
-    \n/**\n * @brief \u7DDA\u5F62\u7BE9\n * @docs docs/Math/NumberTheory/liner_sieve.md\n\
+    \n/**\n * @brief \u7DDA\u5F62\u7BE9\n * @docs docs/Math/NumberTheory/linear_sieve.md\n\
     \ */\n\n#include <algorithm>\n#include <cassert>\n#include <map>\n#include <vector>\n\
     \nnamespace algorithm {\n\n// \u7DDA\u5F62\u7BE9\uFF0E\nclass LinearSieve {\n\
     \    int m_mx;  // m_mx:=(\u7BE9\u306B\u304B\u3051\u308B\u6700\u5927\u306E\u81EA\
@@ -88,18 +88,18 @@ data:
     \ m_primes; }\n};\n\n}  // namespace algorithm\n\n#endif\n"
   dependsOn: []
   isVerificationFile: false
-  path: lib/Math/NumberTheory/liner_sieve.hpp
+  path: lib/Math/NumberTheory/linear_sieve.hpp
   requiredBy: []
-  timestamp: '2024-07-20 13:42:52+09:00'
+  timestamp: '2024-07-28 23:50:32+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/aoj-ALDS1_1_C-liner_sieve.test.cpp
-  - test/aoj-1276-liner_sieve.test.cpp
-documentation_of: lib/Math/NumberTheory/liner_sieve.hpp
+  - test/aoj-1276-linear_sieve.test.cpp
+  - test/aoj-ALDS1_1_C-linear_sieve.test.cpp
+documentation_of: lib/Math/NumberTheory/linear_sieve.hpp
 layout: document
 redirect_from:
-- /library/lib/Math/NumberTheory/liner_sieve.hpp
-- /library/lib/Math/NumberTheory/liner_sieve.hpp.html
+- /library/lib/Math/NumberTheory/linear_sieve.hpp
+- /library/lib/Math/NumberTheory/linear_sieve.hpp.html
 title: "\u7DDA\u5F62\u7BE9"
 ---
 ## 概要

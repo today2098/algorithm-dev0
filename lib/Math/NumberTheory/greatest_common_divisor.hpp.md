@@ -33,7 +33,7 @@ data:
   path: lib/Math/NumberTheory/greatest_common_divisor.hpp
   requiredBy:
   - lib/Math/NumberTheory/least_common_multiple.hpp
-  timestamp: '2024-07-20 13:42:52+09:00'
+  timestamp: '2024-07-28 23:50:32+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/aoj-NTL_1_C-least_common_multiple.test.cpp

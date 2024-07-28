@@ -132,7 +132,7 @@ data:
   isVerificationFile: false
   path: lib/Graph/ShortestPath/bellman_ford.hpp
   requiredBy: []
-  timestamp: '2024-07-20 13:42:52+09:00'
+  timestamp: '2024-07-28 23:50:32+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/aoj-GRL_1_B-bellman_ford.test.cpp
